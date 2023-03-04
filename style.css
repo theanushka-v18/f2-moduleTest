@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* modal styling starts */
+.modal-wrapper {
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    border: 1px solid green;
+    background-color: white;
+    padding: 1rem 3rem;
+    width: 60%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-container input, .modal-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.modal-container button {
+    border-color: black;
+    color: black;
+}
+
+.modal-container p {
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+    left: 100%;
+}
+
+.modal-container button:hover {
+    color: white;
+    background-color: black;
+    border-color: transparent;
+}
+
+.modal-active {
+    opacity: 1;
+    z-index: 1;
+}
+/* modal styling ends */
+
+
+/* blog styling starts */
+.blogPost {
+    margin-top: 2rem;
+    max-width: 90%;
+    border: 1px solid white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 0.5em;
+    position: relative;
+}
+
+.postBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postBtns button {
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.time {
+    color: #8a8585;
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* blog styling ends */
