@@ -24,12 +24,9 @@ function deleteFunc(deleteId) {
     deleteBtn.addEventListener('click', function(e) {
         let getGrandParentNode = deleteBtn.parentNode.parentNode;
         if(deleteId != null) {
-            arr.push({parentNode: getGrandParentNode, idx: deleteId});
+            getGrandParentNode.remove();
             deleteId = null;
         }
-        arr.forEach((k) => {
-            console.log(k);
-        })
     })
 }
 

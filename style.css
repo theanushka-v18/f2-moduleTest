@@ -102,3 +102,28 @@ body {
 }
 
 /* blog styling ends */
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .postBtns button {
+        padding: 0.2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .postBtns button {
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .postBtns button {
+        padding: 0.2rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    .time {
+        font-size: 0.6rem;
+    }
+}
